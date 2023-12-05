@@ -24,6 +24,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import algonquin.cst2335.cst2335graphicalinterfaceprogramming.R;
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.databinding.DictSearchFragmentBinding;
 
 public class SearchFragment extends Fragment {
@@ -46,8 +47,8 @@ public class SearchFragment extends Fragment {
 
         binding.dictHelpButton.setOnClickListener((view) -> {
             new AlertDialog.Builder(getContext())
-                    .setTitle("Help")
-                    .setMessage("<fill in help text>")
+                    .setTitle(getString(R.string.help_title))
+                    .setMessage(getString(R.string.help_info))
                     .setNeutralButton("Ok", (dialog, i) -> dialog.dismiss())
                     .show();
         });

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dictionnaire</string>
+    <string name="main_title">Quelle définition recherchez-vous?</string>
+    <string name="saved_words_title">Mots sauvegardés</string>
+    <string name="help_title">Aide</string>
+    <string name="help_info">" Bienvenue dans le dictionnaire de recherche!\nPour commencer, il vous suffit de taper votre requête dans la barre de recherche et d’appuyer sur Entrée ou de cliquer sur l’icône de recherche.\nBonne recherche!"</string>
+</resources>

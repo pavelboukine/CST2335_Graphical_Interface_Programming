@@ -3,5 +3,5 @@
     <string name="main_title">What definition are you looking for?</string>
     <string name="saved_words_title">Saved Words</string>
     <string name="help_title">Help</string>
-    <string name="help_info">Welcome to the Search Dictionary!\n\nTo begin, simply type your query into the search bar and hit "Enter" or click the search icon.\nHappy searching!</string>
+    <string name="help_info">Welcome to the Search Dictionary!  To begin, simply type your query into the search bar and hit Enter or click the search icon. Happy searching!</string>
 </resources>

@@ -27,10 +27,21 @@ import java.util.List;
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.R;
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.databinding.DictSearchFragmentBinding;
 
+/**
+ * A fragment responsible for handling search functionality in the Dictionary application.
+ */
 public class SearchFragment extends Fragment {
 
     DictionaryActivity activity = null;
 
+    /**
+     * Called to have the fragment instantiate its user interface view.
+     *
+     * @param inflater           The LayoutInflater object that can be used to inflate any views in the fragment.
+     * @param container          If non-null, this is the parent view that the fragment's UI should be attached to.
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state.
+     * @return The created view or null.
+     */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -73,6 +84,7 @@ public class SearchFragment extends Fragment {
                 null,
 
                 // on successful request
+                    // nested loops to pull the information to be displayed as a dictionary search
                 (rootArray) -> {
                     try {
                         final List<Definition> words = new ArrayList<>();
@@ -111,6 +123,7 @@ public class SearchFragment extends Fragment {
             ));
         });
 
+        // on click lister to store or delete words in the database.
         binding.dictSavedButton.setOnClickListener(view -> {
 //            ArrayList<Word> words = new ArrayList<>();
 //            words.add(new Word("a"));

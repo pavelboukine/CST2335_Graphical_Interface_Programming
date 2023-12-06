@@ -10,13 +10,22 @@ import androidx.room.Room;
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.R;
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.databinding.DictMainLayoutBinding;
 
-
+/**
+ * The DictionaryActivity class serves as the main entry point for the dictionary application.
+ * It is responsible for initializing the database, setting up the UI, and managing fragments.
+ */
 public class DictionaryActivity extends AppCompatActivity {
 
     DictMainLayoutBinding binding = null;
 
     DefinitionDao dao;
 
+    /**
+     * Called when the activity is first created. This method performs the initial setup
+     * including database initialization, UI setup, and the launch of the initial fragment.
+     *
+     * @param savedInstanceState If non-null, this Bundle contains previously saved state.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +46,12 @@ public class DictionaryActivity extends AppCompatActivity {
         setFragment(new SearchFragment(), false);
     }
 
+    /**
+     * Sets the given fragment in the fragment container view, optionally adding it to the back stack.
+     *
+     * @param fragment         The fragment to be displayed.
+     * @param addToBackstack   If true, the fragment is added to the back stack.
+     */
     public void setFragment(Fragment fragment, boolean addToBackstack) {
 
         FragmentTransaction t = getSupportFragmentManager().beginTransaction();
@@ -45,10 +60,13 @@ public class DictionaryActivity extends AppCompatActivity {
         t.commit();
     }
 
+    /**
+     * Gets the DefinitionDao instance associated with the MainActivity.
+     *
+     * @return The DefinitionDao instance used for database operations.
+     */
     public DefinitionDao getDefinitionDao(){
         return this.dao;
     }
-
-
 
 }

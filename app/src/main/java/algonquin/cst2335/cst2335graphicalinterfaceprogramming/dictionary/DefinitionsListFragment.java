@@ -23,9 +23,9 @@ import algonquin.cst2335.cst2335graphicalinterfaceprogramming.R;
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.databinding.DictDefinitionsListFragmentBinding;
 
 /**
- * A simple {@link Fragment} subclass.
- * Use the {@link DefinitionsListFragment#newInstance} factory method to
- * create an instance of this fragment.
+ * A fragment class representing a list of definitions for a given word.
+ * It includes functionality for displaying and interacting with a list of definitions,
+ * allowing users to save and delete word definitions.
  */
 public class DefinitionsListFragment extends Fragment {
 
@@ -34,11 +34,25 @@ public class DefinitionsListFragment extends Fragment {
 
     DictionaryActivity activity = null;
 
+    /**
+     * Constructs a new DefinitionsListFragment with the specified word and list of definitions.
+     *
+     * @param word The word for which the definitions are displayed.
+     * @param defs The list of definitions to be displayed.
+     */
     public DefinitionsListFragment(String word, List<Definition> defs) {
         this.defs = defs;
         this.word = word;
     }
 
+    /**
+     * Called to create the view hierarchy associated with the fragment.
+     *
+     * @param inflater           The LayoutInflater object that can be used to inflate views.
+     * @param container          If non-null, this is the parent view that the fragment's UI should be attached to.
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state.
+     * @return The root view of the fragment's layout.
+     */
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
@@ -98,11 +112,19 @@ public class DefinitionsListFragment extends Fragment {
         return binding.getRoot();
     }
 
-
+    /**
+     * A ViewHolder for the RecyclerView to hold the views associated with a single item in the list of definitions.
+     */
     static class ViewHolder extends RecyclerView.ViewHolder {
         public final TextView numberText;
         public final TextView partOfSpeech;
         public final TextView defParagraph;
+
+        /**
+         * Constructs a new ViewHolder with the given item view.
+         *
+         * @param itemView The view representing a single item in the RecyclerView.
+         */
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.numberText = itemView.findViewById(R.id.dict_defNumber);

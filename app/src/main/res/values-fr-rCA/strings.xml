@@ -6,6 +6,7 @@
     <string name="lookup_text">Chercher</string>
     <string name="save_location_text">Enregistrer L\'emplacement</string>
     <string name="view_favorite_locations_text">Afficher les emplacements favoris</string>
+    <string name="location_info">Information de Lieu</string>
     <string name="latitude_input_text">Entrez la latitude:</string>
     <string name="longitude_input_text">Entrez la longitude:</string>
     <string name="back_text">Dos</string>

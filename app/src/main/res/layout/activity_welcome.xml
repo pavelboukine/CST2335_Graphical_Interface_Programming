@@ -36,10 +36,10 @@
         android:textSize="22dp" />
 
     <Button
-        android:id="@+id/Recipe_Search_Page"
+        android:id="@+id/Dictionary_API_Page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recipe Search"
+        android:text="Dictionary API"
         android:layout_below="@id/Sunrise_Sunset_Page"
         android:layout_marginTop="32dp"
         android:padding="15dp"
@@ -47,11 +47,11 @@
         android:textSize="22dp" />
 
     <Button
-        android:id="@+id/Dictionary_API_Page"
+        android:id="@+id/Recipe_Search_Page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dictionary API"
-        android:layout_below="@id/Recipe_Search_Page"
+        android:text="Recipe Search"
+        android:layout_below="@id/Dictionary_API_Page"
         android:layout_marginTop="32dp"
         android:padding="15dp"
         app:cornerRadius="0dp"
@@ -62,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Deezer Song Search API"
-        android:layout_below="@id/Dictionary_API_Page"
+        android:layout_below="@id/Recipe_Search_Page"
         android:layout_marginTop="32dp"
         android:padding="15dp"
         app:cornerRadius="0dp"

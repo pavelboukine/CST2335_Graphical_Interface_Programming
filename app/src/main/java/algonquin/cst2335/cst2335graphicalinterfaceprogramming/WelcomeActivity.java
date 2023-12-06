@@ -12,6 +12,8 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import algonquin.cst2335.cst2335graphicalinterfaceprogramming.dictionary.DictionaryActivity;
+
 public class WelcomeActivity extends AppCompatActivity {
 
     @Override
@@ -29,18 +31,18 @@ public class WelcomeActivity extends AppCompatActivity {
         buttonPage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(WelcomeActivity.this, WelcomeActivity.class));
-            }
-        });
-
-        buttonPage2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(WelcomeActivity.this, WelcomeActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
             }
         });
 
         buttonPage3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WelcomeActivity.this, DictionaryActivity.class));
+            }
+        });
+
+        buttonPage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WelcomeActivity.this, WelcomeActivity.class));

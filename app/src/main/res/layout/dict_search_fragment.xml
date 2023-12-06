@@ -51,10 +51,11 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/question_icon"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/question_icon" />
+        tools:src="@drawable/question_icon" />
 
     <ImageButton
         android:id="@+id/dict_saved_button"
@@ -62,9 +63,10 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/menu_icon"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@drawable/menu_icon" />
+        tools:src="@drawable/menu_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

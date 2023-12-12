@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import algonquin.cst2335.cst2335graphicalinterfaceprogramming.dictionary.DictionaryActivity;
+import algonquin.cst2335.cst2335graphicalinterfaceprogramming.recipesearch.RecipeSearchActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -45,7 +46,7 @@ public class WelcomeActivity extends AppCompatActivity {
         buttonPage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(WelcomeActivity.this, WelcomeActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, RecipeSearchActivity.class));
             }
         });
 

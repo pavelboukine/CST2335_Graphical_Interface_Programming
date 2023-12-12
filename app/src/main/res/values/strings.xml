@@ -57,4 +57,11 @@
     <string name="saved_words_title">Saved Words</string>
     <string name="help_title">Help</string>
     <string name="help_info">Welcome to the Search Dictionary!  To begin, simply type your query into the search bar and hit Enter or click the search icon. Happy searching!</string>
+
+    <string name="app_name3">Recipe Search</string>
+    <string name="recipe_main_title">What recipes are you looking for?</string>
+    <string name="saved_recipe_title">Saved Recipes</string>
+    <string name="recipe_help_info">Welcome to the recipe search app, please type in a recipe keyword.</string>
+
+
 </resources>

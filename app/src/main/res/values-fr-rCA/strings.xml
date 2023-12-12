@@ -39,4 +39,8 @@
     <string name="saved_words_title">Mots sauvegardés</string>
     <string name="help_title">Aide</string>
     <string name="help_info">" Bienvenue dans le dictionnaire de recherche!\nPour commencer, il vous suffit de taper votre requête dans la barre de recherche et d’appuyer sur Entrée ou de cliquer sur l’icône de recherche.\nBonne recherche!"</string>
+    <string name="app_name3">Recherche de Recette</string>
+    <string name="recipe_main_title">Quelles recettes cherchez-vous?</string>
+    <string name="saved_recipe_title">Recettes Enregistrées</string>
+    <string name="recipe_help_info">Bienvenue dans l\'application de recherche de recettes, veuillez saisir un mot-clé de recette.</string>
 </resources>
